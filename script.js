@@ -60,7 +60,7 @@ const game = (() => {
             if (cellMarked) {
                 displayController.renderGameBoard();
                 if (checkWin(currentPlayer)) {
-                    displayController.displayMessage(`${currentPlayer} wins!`);
+                    displayController.displayMessage(`${currentPlayer.name} wins!`);
                     cells.forEach((cell) => {
                         cell.removeEventListener('click', cellClickHandler);
                     });
